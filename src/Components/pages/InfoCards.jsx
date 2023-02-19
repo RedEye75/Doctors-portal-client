@@ -29,7 +29,7 @@ const InfoCards = () => {
     },
   ];
   return (
-    <div className="grid grid-cols-3 gap-[24px]">
+    <div className="grid grid-cols-3  max-w-[1440px] mx-auto gap-[24px]">
       {cardData.map((card) => (
         <Infocard key={card.id} card={card}></Infocard>
       ))}

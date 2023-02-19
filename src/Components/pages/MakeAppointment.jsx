@@ -7,9 +7,9 @@ const MakeAppointment = () => {
   return (
     <div
       style={{ background: `url(${appointment})` }}
-      className="h-[533px] mt-[169px] ]"
+      className="h-[533px] mt-[169px]  ]"
     >
-      <section className="grid grid-cols-2 items-center gap-[102px]">
+      <section className="grid  grid-cols-2 items-center gap-[102px]">
         <div>
           <img
             className="w-[606.84px] h-[636px] -mt-[102px]  ml-[135.19px] rounded"
