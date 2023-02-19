@@ -17,7 +17,7 @@ const Banner = () => {
             </p>
             <div className="flex flex-col  sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
               <Link>
-                <button className="px-10 py-3 bg-[#14d8d0] border rounded-md border-black font-bold">
+                <button className="px-10 py-4 bg-[#14d8d0] border rounded text-white -mt-5 border-black font-bold">
                   Get started
                 </button>
               </Link>
