@@ -1,14 +1,13 @@
 import React, { useState } from "react";
 import chair from "../../../assets/images/chair.png";
 import { DayPicker } from "react-day-picker";
-import { format } from "date-fns";
 import bg from "../../../assets/images/bg.png";
 
 const AppointmentBanner = ({ x, y }) => {
   return (
     <div
       style={{ background: `url(${bg})` }}
-      className="max-w-screen-xl  mx-auto"
+      className="max-w-screen-2xl  mx-auto"
     >
       <section class="text-gray-600 body-font">
         <div class="container mx-auto flex justify-evenly px-5 py-24 md:flex-row flex-col items-center">
