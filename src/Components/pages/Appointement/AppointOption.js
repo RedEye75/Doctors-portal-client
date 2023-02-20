@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const AppointOption = ({ value }) => {
+const AppointOption = ({ value, setTreatment }) => {
   const { name, slots } = value;
   return (
     <div>
@@ -19,17 +19,22 @@ const AppointOption = ({ value }) => {
           {slots.length < 1 ? (
             <></>
           ) : (
-            <p>
+            <p className="text-[16px] font-bold text-orange-600">
               {slots.length} {slots.length > 1 ? "spaces" : "space"} available
             </p>
           )}
         </div>
         {slots.length > 0 ? (
-          <Link to={"/"}>
-            <button className="p-2 text-[14px] mt-[13px] bg-[#19D3AE] text-white font-medium rounded">
+          <div className="mt-[13px]">
+            {" "}
+            <label
+              onClick={() => setTreatment(value)}
+              htmlFor="bookingModal"
+              className=" p-2 text-[14px]  bg-[#19D3AE] text-white font-medium rounded"
+            >
               Book Appointment
-            </button>
-          </Link>
+            </label>
+          </div>
         ) : (
           <></>
         )}
