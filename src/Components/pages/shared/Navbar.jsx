@@ -14,11 +14,24 @@ export default function Example() {
 
   const navList = (
     <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-      <NavLink className="p-1  font-bold ">Home</NavLink>
-      <NavLink className="p-1  font-bold ">Contact us</NavLink>
-      <NavLink className="p-1  font-bold ">About</NavLink>
-      <NavLink className="p-1  font-bold ">Appointment</NavLink>
-      <NavLink className="p-1  font-bold ">Reviews</NavLink>
+      <NavLink to={"/"} className="p-1  font-bold ">
+        Home
+      </NavLink>
+      <NavLink to={"/about"} className="p-1  font-bold ">
+        About
+      </NavLink>
+      <NavLink to={"/appointment"} className="p-1  font-bold ">
+        Appointment
+      </NavLink>
+      <NavLink to={"/reviews"} className="p-1  font-bold ">
+        Reviews
+      </NavLink>
+      <NavLink to={"/contact"} className="p-1  font-bold ">
+        Contact us
+      </NavLink>
+      <NavLink to={"/login"} className="p-1  font-bold ">
+        Login
+      </NavLink>
     </ul>
   );
 
