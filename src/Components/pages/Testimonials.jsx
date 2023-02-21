@@ -39,7 +39,7 @@ const Testimonials = () => {
           <small className="font-bold text-[#19D3AE] text-[20px]">
             Testimonial
           </small>
-          <h1 class="text-[36px] leading-[41.29px] font-medium title-font text-gray-900 mb-12 text-center">
+          <h1 className="text-[36px] leading-[41.29px] font-medium title-font text-gray-900 mb-12 text-center">
             What Our Patients Says
           </h1>
         </div>

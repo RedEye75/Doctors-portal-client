@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { Navbar, MobileNav, IconButton } from "@material-tailwind/react";
+import logo from "../../../assets/images/navbar.png";
 
 export default function Example() {
   const [openNav, setOpenNav] = useState(false);
@@ -36,10 +37,13 @@ export default function Example() {
   );
 
   return (
-    <Navbar className="mx-auto max-w-screen-xl h-[64px] border-none text-black  py-2 px-4 lg:px-8 lg:py-4">
+    <Navbar className="mx-auto max-w-screen-xl h-[64px] shadow-none border-none text-black  py-2 px-4 lg:px-8 lg:py-4">
       <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
         <Link to="/" className="mr-4 cursor-pointer py-1.5 font-normal">
-          <span className="font-bold text-3xl">Doctors portal</span>
+          <span className="font-bold flex text-3xl">
+            <img src={logo} className="w-10 mr-3" alt="" />
+            Doctors portal
+          </span>
         </Link>
         <div className="hidden lg:block">{navList}</div>
 

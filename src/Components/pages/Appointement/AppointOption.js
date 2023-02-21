@@ -6,10 +6,10 @@ const AppointOption = ({ value, setTreatment }) => {
   return (
     <div>
       <div className="w-[425px] h-[180px] mx-auto mt-[80px] rounded-lg shadow-lg">
-        <h3 class="text-[20px] text-[#19D3AE] font-bold">{name}</h3>
+        <h3 className="text-[20px] text-[#19D3AE] font-bold">{name}</h3>
 
-        <div class="mt-4 border-t-2 border-gray-100 pt-4">
-          <p class="text-sm font-medium uppercase text-gray-500">
+        <div className="mt-4 border-t-2 border-gray-100 pt-4">
+          <p className="text-sm font-medium uppercase text-gray-800">
             {slots.length > 0 ? (
               slots[0]
             ) : (

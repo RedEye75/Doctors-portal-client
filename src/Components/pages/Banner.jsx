@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import chair from "../../assets/images/chair.png";
+import banner from "../../assets/images/image1.jpg";
 const Banner = () => {
   return (
-    <div id="banner" className="max-w-screen-xl min-h-screen mx-auto">
+    <div id="banner" className="max-w-screen-2xl min-h-screen mx-auto">
       <section className="dark:bg-gray-800  dark:text-gray-100">
         <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
           <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
@@ -24,7 +24,7 @@ const Banner = () => {
             </div>
           </div>
           <div className="flex items-center justify-center p-6 mt-8 lg:mt-0 ">
-            <img src={chair} alt="" className="w-[594px] h-[355px]" />
+            <img src={banner} alt="" className="w-[594px] rounded h-[355px]" />
           </div>
         </div>
       </section>

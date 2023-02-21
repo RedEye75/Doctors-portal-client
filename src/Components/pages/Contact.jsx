@@ -17,13 +17,13 @@ const Contact = () => {
             type="email"
             id="UserEmail"
             placeholder="Email"
-            class="peer h-8 w-[450px] mt-[41px] border-none bg-white p-6 rounded focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm"
+            className="peer h-8 w-[450px] mt-[41px] border-none bg-white p-6 rounded focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm"
           />
           <input
             type="email"
             id="UserEmail"
             placeholder="Email"
-            class="peer h-8 w-[450px] mt-[19px] border-none bg-white p-6 rounded focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm"
+            className="peer h-8 w-[450px] mt-[19px] border-none bg-white p-6 rounded focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm"
           />
           <textarea
             placeholder="Bio"

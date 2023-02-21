@@ -23,7 +23,7 @@ const AvailableAppointment = ({ x }) => {
         Available Services on {format(x, "PPP")}
       </h1>
 
-      <p className="text-[22px] mt-20 -mb-10 text-[#939393]">
+      <p className="text-4xl mt-20 -mb-10 text-blue-800">
         These are all of our services.
       </p>
 
