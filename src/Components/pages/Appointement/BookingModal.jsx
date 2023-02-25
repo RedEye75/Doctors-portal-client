@@ -2,7 +2,7 @@ import { format } from "date-fns";
 import React from "react";
 import { Select, Option, Input } from "@material-tailwind/react";
 
-const BookingModal = ({ treatment, selectedDate }) => {
+const BookingModal = ({ treatment, setTreatment, selectedDate }) => {
   const { name, slots } = treatment;
   const date = format(selectedDate, "PPP");
 
@@ -14,7 +14,17 @@ const BookingModal = ({ treatment, selectedDate }) => {
     const phone = form.phone.value;
     const email = form.email.value;
 
-    console.log(date, slot, name, phone, email);
+    const booking = {
+      appointmentDate: date,
+      treatment: name,
+      patient: name,
+      slot,
+      email,
+      phone,
+    };
+
+    console.log(booking);
+    setTreatment(null);
   };
 
   return (
@@ -46,6 +56,7 @@ const BookingModal = ({ treatment, selectedDate }) => {
               </Select> */}
               <select
                 name="selectedSlot"
+                required
                 className="select border border-gray-500 w-full max-w-xs"
               >
                 {slots?.map((slot, i) => (
@@ -55,6 +66,7 @@ const BookingModal = ({ treatment, selectedDate }) => {
             </div>
             <input
               type="text"
+              required
               name="name"
               placeholder="Full name"
               className="input input-bordered w-full max-w-xs"
@@ -62,11 +74,13 @@ const BookingModal = ({ treatment, selectedDate }) => {
             <input
               type="number"
               name="phone"
+              required
               placeholder="Phone number"
               className="input input-bordered w-full max-w-xs"
             />
             <input
               type="text"
+              required
               name="email"
               placeholder="Email"
               className="input input-bordered w-full max-w-xs"
